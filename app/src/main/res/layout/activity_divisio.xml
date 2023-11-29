@@ -7,7 +7,6 @@
     tools:context=".Divisio">
 
     <Button
-        android:id="@+id/dividir_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="divisio"
@@ -46,7 +45,6 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <Button
-        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="tornar"

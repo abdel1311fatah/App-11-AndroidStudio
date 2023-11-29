@@ -7,7 +7,6 @@
     tools:context=".Multiplicacio">
 
     <Button
-        android:id="@+id/multiplicar_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="multiplicar"
@@ -46,7 +45,6 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <Button
-        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="tornar"

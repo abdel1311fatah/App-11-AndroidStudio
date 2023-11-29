@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -15,5 +16,13 @@
         android:icon="@drawable/zoom_out"
         android:title="restaresta"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/icon_multi"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:title="multi" />
+    <item
+        android:id="@+id/icon_div"
+        android:icon="@android:drawable/ic_lock_idle_low_battery"
+        android:title="div" />
 </menu>
 
