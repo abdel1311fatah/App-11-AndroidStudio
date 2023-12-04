@@ -35,22 +35,25 @@ public class Multiplicacio extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public boolean rerurnHome (Menu menu) {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.overflow, menu);
         return true;
     }
 
-    public boolean returnHome (MenuItem item) {
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.icon_home) {
-            Intent intent = new Intent(this, Suma.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
-    public void multiplicar(View dibuix) {
+
+    public void multiplicar(View dibuix){
 
         resultat.clearComposingText();
 
