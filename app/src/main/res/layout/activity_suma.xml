@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Suma">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="60dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,30 +32,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.612" />
 
-    <TextView
-        android:id="@+id/resultat"
-        android:layout_width="145dp"
-        android:layout_height="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/n2"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <EditText
-        android:id="@+id/n"
-        android:layout_width="145dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="560dp"
-        android:ems="10"
-        android:hint="Second number "
-        android:inputType="number|numberSigned"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/n1"
-        app:layout_constraintVertical_bias="0.108" />
-
     <EditText
         android:id="@+id/n2"
         android:layout_width="145dp"
@@ -50,10 +41,35 @@
         android:inputType="number|numberSigned"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintVertical_bias="0.122" />
+
+    <EditText
+        android:id="@+id/n"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="528dp"
+        android:ems="10"
+        android:hint="Second number "
+        android:inputType="number|numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n1"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n2"
+        app:layout_constraintVertical_bias="0.151" />
 
     <Button
         android:layout_width="wrap_content"
@@ -74,8 +90,8 @@
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.908" />
 </androidx.constraintlayout.widget.ConstraintLayout>

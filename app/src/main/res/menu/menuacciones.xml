@@ -8,12 +8,12 @@
 
     <item
         android:id="@+id/icon_suma"
-        android:icon="@drawable/home"
+        android:icon="@android:drawable/ic_input_add"
         android:title="suma"
         app:showAsAction="always" />
     <item
         android:id="@+id/icon_resta"
-        android:icon="@drawable/zoom_out"
+        android:icon="@android:drawable/bottom_bar"
         android:title="restaresta"
         app:showAsAction="always" />
     <item

@@ -1,9 +1,11 @@
 package com.example.app11_2023_24;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -29,6 +31,14 @@ public class Suma extends AppCompatActivity {
         Intent intent = getIntent();
         String nom = intent.getStringExtra("suma");
         textView.setText(nom);
+        Toolbar toolbar = findViewById(R.id.toolbar5);
+        setSupportActionBar(toolbar);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.overflow, menu);
+        return true;
     }
     public void sumar(View dibuix) {
         resultat.clearComposingText();
