@@ -35,8 +35,7 @@ public class Multiplicacio extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean rerurnHome (Menu menu) {
         getMenuInflater().inflate(R.menu.overflow, menu);
         return true;
     }
@@ -45,7 +44,6 @@ public class Multiplicacio extends AppCompatActivity {
         int id = item.getItemId();
         if (id == R.id.icon_home) {
             Intent intent = new Intent(this, Suma.class);
-            intent.putExtra("suma", Suma.class.getName().toString());
             startActivity(intent);
             return true;
         }

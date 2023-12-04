@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.icon_suma) {
+        if (id == R.id.icon_home) {
             Intent intent = new Intent(this, Suma.class);
             intent.putExtra("suma", Suma.class.getName().toString());
             startActivity(intent);

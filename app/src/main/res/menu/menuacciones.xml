@@ -7,7 +7,7 @@
     app:layout_constraintTop_toTopOf="parent">
 
     <item
-        android:id="@+id/icon_suma"
+        android:id="@+id/icon_home"
         android:icon="@android:drawable/ic_input_add"
         android:title="suma"
         app:showAsAction="always" />
